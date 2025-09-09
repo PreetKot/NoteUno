@@ -1,5 +1,5 @@
-import express from "express";
-import {
+const express = require("express");
+const {
   createNote,
   deleteNote,
   getAllNotes,
@@ -7,9 +7,9 @@ import {
   updateNote,
   downloadFile,
   toggleFavorite,
-} from "../controllers/notesController.js";
-import { authMiddleware } from "../middleware/auth.js";
-import upload from "../middleware/upload.js";
+} = require("../controllers/notesController.js");
+const { authMiddleware } = require("../middleware/auth.js");
+const upload = require("../middleware/upload.js");
 
 const router = express.Router();
 
@@ -22,4 +22,4 @@ router.delete("/:id", authMiddleware, deleteNote);
 router.get("/:noteId/download/:fileId", authMiddleware, downloadFile);
 router.patch("/:id/favorite", authMiddleware, toggleFavorite);
 
-export default router;
+module.exports = router;
