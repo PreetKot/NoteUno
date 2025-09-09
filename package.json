@@ -12,6 +12,15 @@
   "author": "Preet Kot",
   "license": "ISC",
   "description": "A modern note-taking application with authentication and file attachments",
+  "dependencies": {
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1"
+  },
   "devDependencies": {
     "concurrently": "^8.2.2"
   }
