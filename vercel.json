@@ -9,6 +9,14 @@
   },
   "routes": [
     {
+      "src": "/api/health",
+      "dest": "/api/health.js"
+    },
+    {
+      "src": "/api/minimal",
+      "dest": "/api/minimal.js"
+    },
+    {
       "src": "/api/(.*)",
       "dest": "/api/index.js"
     },
