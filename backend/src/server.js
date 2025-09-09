@@ -19,6 +19,13 @@ if (process.env.NODE_ENV !== "production") {
       origin: ["http://localhost:5173", "http://localhost:5174"],
     })
   );
+} else {
+  app.use(
+    cors({
+      origin: [process.env.FRONTEND_URL || "https://noteuno.vercel.app"],
+      credentials: true,
+    })
+  );
 }
 app.use(express.json()); // this middleware will parse JSON bodies: req.body
 
@@ -42,8 +49,17 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-connectDB().then(() => {
-  app.listen(PORT, () => {
-    console.log("Server started on PORT:", PORT);
+// For local development
+if (process.env.NODE_ENV !== "production") {
+  connectDB().then(() => {
+    app.listen(PORT, () => {
+      console.log("Server started on PORT:", PORT);
+    });
   });
-});
+} else {
+  // For Vercel serverless
+  connectDB();
+}
+
+// Export for Vercel
+export default app;
