@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for better UI */
+@layer utilities {
+  .avatar-gradient {
+    @apply bg-gradient-to-br from-primary to-secondary;
+  }
+  
+  .profile-menu {
+    @apply shadow-2xl bg-base-100 border border-base-200 backdrop-blur-md;
+  }
+  
+  .menu-item-hover {
+    @apply hover:bg-base-200 transition-colors duration-200;
+  }
+}
+
+/* Smooth transitions for dropdown */
+.dropdown-content {
+  animation: dropdownFadeIn 0.2s ease-out;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
