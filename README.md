@@ -235,15 +235,6 @@ GET /api/notes/:noteId/download/:fileId  # Download attachment
 
 ---
 
-## 🤝 Contributing
-
-We love contributions! Here's how you can help make NoteUno even better:
-
-### **Ways to Contribute**
-- 🐛 **Report Bugs** - Found an issue? Let us know!
-- ✨ **Suggest Features** - Have ideas? We'd love to hear them!
-- 💻 **Submit Code** - Ready to contribute? Fork and submit a PR!
-- 📖 **Improve Docs** - Help make our documentation better
 
 ### **Development Process**
 1. **Fork** the repository
@@ -257,21 +248,6 @@ We love contributions! Here's how you can help make NoteUno even better:
 - Follow **React** best practices
 - Write **meaningful commit messages**
 - Add **comments** for complex logic
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
 
 ---
 
