@@ -1,20 +1,9 @@
 # 📝 NoteUno - Modern Note-Taking App
 
 <div align="center">
-  <img src="./frontend/public/screenshot-for-readme.png" alt="NoteUno Screenshot" width="800px" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-</div>
-
-<div align="center">
-
-[![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
-[![JWT](https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white)](https://jwt.io/)
-[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
 **A beautiful, modern, and feature-rich note-taking application built with the MERN stack**
 
-[🚀 Live Demo](#) • [📖 Documentation](#features) • [🐛 Report Bug](#contributing) • [✨ Request Feature](#contributing)
 
 </div>
 
@@ -239,11 +228,6 @@ GET /api/notes/:noteId/download/:fileId  # Download attachment
 </div>
 
 ---
-
-## 🤝 Contributing
-
-We love contributions! Here's how you can help make NoteUno even better:
-
 ### **Ways to Contribute**
 - 🐛 **Report Bugs** - Found an issue? Let us know!
 - ✨ **Suggest Features** - Have ideas? We'd love to hear them!
@@ -263,32 +247,7 @@ We love contributions! Here's how you can help make NoteUno even better:
 - Write **meaningful commit messages**
 - Add **comments** for complex logic
 
----
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-
----
-
-## 🙏 Acknowledgments
-
-- **React Team** - For the amazing React library
-- **MongoDB** - For the flexible database solution
-- **Tailwind CSS** - For the beautiful utility-first CSS
-- **DaisyUI** - For the gorgeous component library
-- **Lucide** - For the consistent icon system
-
----
 
 ## 📊 Project Status
 
