@@ -1,8 +1,5 @@
 # 📝 NoteUno - Modern Note-Taking App
 
-<div align="center">
-  <img src="./frontend/public/screenshot-for-readme.png" alt="NoteUno Screenshot" width="800px" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-</div>
 
 <div align="center">
 
