@@ -3,18 +3,18 @@
   "name": "noteuno-backend",
   "builds": [
     {
-      "src": "src/server.js",
+      "src": "diagnostic-server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "src/server.js"
+      "dest": "diagnostic-server.js"
     },
     {
       "src": "/(.*)",
-      "dest": "src/server.js"
+      "dest": "diagnostic-server.js"
     }
   ],
   "env": {
