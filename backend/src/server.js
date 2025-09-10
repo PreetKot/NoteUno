@@ -55,11 +55,53 @@ if (process.env.NODE_ENV !== "production") {
     app.listen(PORT, () => {
       console.log("Server started on PORT:", PORT);
     });
+  }).catch((error) => {
+    console.error("Failed to start server:", error);
+    process.exit(1);
   });
-} else {
-  // For Vercel serverless
-  connectDB();
 }
+
+// For Vercel serverless - connect to DB on each request
+let isConnected = false;
+
+const connectToDatabase = async () => {
+  if (isConnected) {
+    return;
+  }
+  try {
+    await connectDB();
+    isConnected = true;
+  } catch (error) {
+    console.error("Database connection failed:", error);
+    throw error;
+  }
+};
+
+// Middleware to ensure DB connection for serverless
+app.use(async (req, res, next) => {
+  if (process.env.NODE_ENV === "production") {
+    try {
+      await connectToDatabase();
+    } catch (error) {
+      return res.status(500).json({ 
+        success: false, 
+        message: "Database connection failed",
+        error: error.message 
+      });
+    }
+  }
+  next();
+});
+
+// Health check endpoint
+app.get("/", (req, res) => {
+  res.json({ 
+    success: true, 
+    message: "NoteUno Backend API is running!",
+    environment: process.env.NODE_ENV,
+    timestamp: new Date().toISOString()
+  });
+});
 
 // Export for Vercel
 export default app;
