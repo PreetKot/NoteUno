@@ -2,9 +2,13 @@
 
 <div align="center">
 
+[![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![JWT](https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white)](https://jwt.io/)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
 **A beautiful, modern, and feature-rich note-taking application built with the MERN stack**
-
-
 </div>
 
 ---
@@ -228,11 +232,15 @@ GET /api/notes/:noteId/download/:fileId  # Download attachment
 </div>
 
 ---
+<<<<<<< HEAD
 ### **Ways to Contribute**
 - 🐛 **Report Bugs** - Found an issue? Let us know!
 - ✨ **Suggest Features** - Have ideas? We'd love to hear them!
 - 💻 **Submit Code** - Ready to contribute? Fork and submit a PR!
 - 📖 **Improve Docs** - Help make our documentation better
+=======
+
+>>>>>>> 563b0473e5b1ec2b4d73d5394992e4605b3e2b60
 
 ### **Development Process**
 1. **Fork** the repository
@@ -248,6 +256,18 @@ GET /api/notes/:noteId/download/:fileId  # Download attachment
 - Add **comments** for complex logic
 
 
+<<<<<<< HEAD
+=======
+## 🙏 Acknowledgments
+
+- **React Team** - For the amazing React library
+- **MongoDB** - For the flexible database solution
+- **Tailwind CSS** - For the beautiful utility-first CSS
+- **DaisyUI** - For the gorgeous component library
+- **Lucide** - For the consistent icon system
+
+---
+>>>>>>> 563b0473e5b1ec2b4d73d5394992e4605b3e2b60
 
 ## 📊 Project Status
 
