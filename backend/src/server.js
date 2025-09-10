@@ -6,6 +6,7 @@ import path from "path";
 import notesRoutes from "./routes/notesRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import { connectDB } from "./config/db.js";
+
 dotenv.config();
 
 const app = express();
@@ -68,6 +69,24 @@ if (process.env.NODE_ENV !== "production") {
     console.log("Server started on PORT:", PORT);
   });
 }
+
+// Global error handler
+app.use((error, req, res, next) => {
+  console.error("Global error handler:", error);
+  res.status(500).json({
+    success: false,
+    message: "Internal server error",
+    error: process.env.NODE_ENV === "production" ? "Something went wrong" : error.message
+  });
+});
+
+// 404 handler
+app.use("*", (req, res) => {
+  res.status(404).json({
+    success: false,
+    message: `Route ${req.originalUrl} not found`
+  });
+});
 
 // Export for Vercel
 export default app;
