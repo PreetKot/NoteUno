@@ -11,8 +11,6 @@
 
 **A beautiful, modern, and feature-rich note-taking application built with the MERN stack**
 
-[🚀 Live Demo](#) • [📖 Documentation](#features) • [🐛 Report Bug](#contributing) • [✨ Request Feature](#contributing)
-
 </div>
 
 ---
